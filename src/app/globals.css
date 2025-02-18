@@ -6,17 +6,30 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+html, body {
+  overflow-x: hidden;
+  width: 100vw;
+}
+
 
 @layer base {
   :root {
     /* Definindo cores */
-    --background: 0 0% 100%; /* branco */
-    --foreground: 222 47.4% 11.2%; /* cor padrão para textos (você pode ajustar se desejar) */
+    --background: 0 0% 100%;
+    /* branco */
+    --foreground: 222 47.4% 11.2%;
+    /* cor padrão para textos (você pode ajustar se desejar) */
 
     /* Usaremos #236742 como cor primária */
-    --primary: 147 49% 27%; /* aproximadamente hsl(147, 49%, 27%) */
-    --primary-foreground: 0 0% 100%; /* texto branco sobre o primário */
+    --primary: 147 49% 27%;
+    /* aproximadamente hsl(147, 49%, 27%) */
+    --primary-foreground: 0 0% 100%;
+    /* texto branco sobre o primário */
 
     /* Outras variáveis (mantidas para compatibilidade, mas podem ser ajustadas ou ignoradas) */
     --card: 0 0% 100%;
@@ -26,12 +39,13 @@ body {
     --border: 240 5.9% 90%;
     --radius: 0.5rem;
   }
-  
+
   /* Configuração para modo escuro (opcional – ajuste conforme sua preferência) */
   .dark {
     --background: 222 47.4% 11.2%;
     --foreground: 0 0% 100%;
-    --primary: 147 49% 27%; /* Mantemos a mesma cor primária */
+    --primary: 147 49% 27%;
+    /* Mantemos a mesma cor primária */
     --primary-foreground: 0 0% 100%;
   }
 }
@@ -40,6 +54,7 @@ body {
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
