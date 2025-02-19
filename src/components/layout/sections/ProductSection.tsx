@@ -30,27 +30,27 @@ const ProductSection = () => {
     return (
         <section className="w-full flex flex-col items-center px-6 py-10">
             {/* Título */}
-            <div className="relative flex items-center w-full max-w-[800px] justify-center mb-8">
-                <div className="absolute left-0 w-16 border-t-2 border-green-800"></div>
-                <h2 className="text-2xl font-bold text-green-900 mx-4 md:text-3xl">
+            <div className="relative flex items-center w-full  mb-8">
+                <div className=" w-20 lg:w-36 h-1 lg:h-2 bg-[#4C8365] rounded"></div>
+                <h2 className="text-3xl font-bold text-green-900 mx-4 lg:text-5xl lg:pb-2">
                     Produto
                 </h2>
-                <div className="absolute right-0 w-16 border-t-2 border-green-800"></div>
+                <div className=" w-full h-1 lg:h-2 bg-[#4C8365] rounded "></div>
             </div>
 
             {/* Grid Responsivo */}
-            <div className="flex flex-col gap-6 md:grid md:grid-cols-2 md:gap-8">
+            <div className="flex flex-col gap-6 lg:grid lg:grid-cols-2 lg:gap-8">
                 {features.map((feature, index) => (
-                    <Card key={index} className="bg-white h-56 shadow-lg rounded-3xl p-6 flex flex-row items-center gap-4">
+                    <Card key={index} className="bg-white shadow-[6px_6px_30px_#4C8365] rounded-3xl p-6">
+                        <CardContent className="p-0 ">
+                            <h3 className=" text-xl lg:text-2xl font-bold text-green-900 mb-3">{feature.title}</h3>
+                            <div className="flex gap-4 items-center">
+                                <p className="w-[69%] lg:w-[80%] text-gray-700 text-sm lg:text-lg">{feature.description}</p>
+                                <div className="flex justify-center items-start mb-5">
+                                    <Image src={feature.icon} alt={feature.title} width={150} height={150} className="w-[70px] h-[70px] lg:w-24 lg:h-auto" />
+                                </div>
+                            </div>
 
-                        <CardContent className="p-0 flex gap-4">
-                            <div className="w-[80%]">
-                                <h3 className="text-lg font-bold text-green-900">{feature.title}</h3>
-                                <p className="text-gray-700 text-sm">{feature.description}</p>
-                            </div>
-                            <div className="flex justify-center items-center">
-                                <Image src={feature.icon} alt={feature.title} width={150} height={150} className="w-12 h-12 md:w-16 md:h-16" />
-                            </div>
                         </CardContent>
 
                     </Card>
@@ -58,7 +58,7 @@ const ProductSection = () => {
             </div>
 
             {/* Botão abaixo dos cards */}
-            <Button className="mt-10 bg-green-800 text-white text-[20px] md:text-[28px] font-semibold px-8 py-6 rounded-lg hover:bg-green-900 transition">
+            <Button className="mt-10 bg-green-800 text-white text-[20px] lg:text-[28px] font-semibold px-8 py-6 rounded-lg hover:bg-green-900 transition shadow-[6px_6px_30px_#4C8365]">
                 Faça seu orçamento
             </Button>
         </section>
