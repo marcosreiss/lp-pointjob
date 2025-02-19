@@ -6,7 +6,7 @@ const HeroSection = () => {
     return (
         <section className="w-full flex flex-col-reverse md:flex-row items-center justify-between px-6 py-10 bg-transparent md:relative md:mt-12">
             {/* Texto à esquerda */}
-            <div className="max-w-[570px] text-left md:h-[600px] md:mt-5 ">
+            <div className="max-w-[570px] text-left  md:mt-5 md:mb-52 ">
                 <h1 className="text-white text-[24px] md:text-4xl font-bold leading-tight md:leading-normal">
                     Obtenha mais
                     <span className="bg-white text-green-800 text-[36px] px-3 py-1 inline-block md:inline md:mx-2 w-9/10 lg:w-90 mx-auto m-2 rounded">
