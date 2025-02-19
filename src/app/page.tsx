@@ -1,5 +1,6 @@
 import BaseLayout from "src/components/layout/BaseLayout";
 import Navbar from "src/components/layout/NavBar";
+import HeroSection from "src/components/layout/sections/HeroSection";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
     height="2000px"
     >
       <Navbar />
+      <HeroSection />
     </BaseLayout>
   );
 }
