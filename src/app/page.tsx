@@ -1,6 +1,7 @@
 import BaseLayout from "src/components/layout/BaseLayout";
 import Navbar from "src/components/layout/NavBar";
 import HeroSection from "src/components/layout/sections/HeroSection";
+import ProductSection from "src/components/layout/sections/ProductSection";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
     >
       <Navbar />
       <HeroSection />
+      <ProductSection />
     </BaseLayout>
   );
 }
