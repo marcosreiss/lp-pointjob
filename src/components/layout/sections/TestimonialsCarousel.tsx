@@ -49,9 +49,9 @@ export function TestimonialsCarousel() {
           {testimonials.map((testimonial, index) => (
             <CarouselItem
               key={index}
-              className="basis-full sm:basis-1/2 md:basis-1/3 px-2"
+              className="basis-full sm:basis-1/2 md:basis-1/3 px-4"
             >
-              <Card className="bg-white text-black shadow-lg rounded-lg p-6 flex flex-col items-center gap-4">
+              <Card className="bg-white text-black shadow-lg rounded-lg p-6 flex flex-col items-center gap-4 min-h-[300px]">
                 <Image
                   src={testimonial.image}
                   alt={testimonial.name}
