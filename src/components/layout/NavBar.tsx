@@ -4,14 +4,14 @@ import { Button } from "src/components/ui/button";
 
 const Navbar = () => {
   return (
-    <nav className="w-full flex flex-col md:flex-row items-center md:justify-between gap-4 px-6 pt-6 pb-4 bg-transparent">
+    <nav className="w-full flex flex-col md:flex-row items-center md:justify-between gap-0 px-6 pt-6 md:pt-16 pb-4 bg-transparent">
       {/* Logo */}
       <div className="flex items-center">
         <Image
           src="/logo.webp"
           alt="Logo PointJob"
-          width={170} // Desktop
-          height={50}
+          width={140} // Desktop
+          height={41}
           className="md:w-[190px] md:h-[55px] lg:w-[207] lg:h-[50px]"
         />
       </div>
