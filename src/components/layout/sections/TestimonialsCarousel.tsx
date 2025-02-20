@@ -1,13 +1,7 @@
 import * as React from "react";
 import Image from "next/image";
 import { Card } from "src/components/ui/card";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "src/components/ui/carousel";
+
 
 const testimonials = [
   {
@@ -31,10 +25,13 @@ const testimonials = [
 ];
 
 export function TestimonialsCarousel() {
+  
+
   return (
-    <section className="w-full flex flex-col items-center px-6 py-10 bg-green-800 text-white">
+    <section className="w-full flex flex-col items-center justify-center px-6 py-10 bg-primary text-white lg:min-h-[600px] relative">
+      <div className="absolute top-0 left-0 w-full h-10 bg-gradient-to-b from-black/30 to-transparent"></div>
       {/* Título */}
-      <h2 className="text-2xl font-bold text-center mb-6 md:text-3xl">
+      <h2 className="text-2xl font-bold text-center mb-6 md:text-3xl ">
         O que nossos clientes dizem sobre nós:
       </h2>
 
@@ -74,6 +71,7 @@ export function TestimonialsCarousel() {
           </div>
         )}
       </Carousel>
+      <div className="absolute bottom-0 left-0 w-full h-6 bg-gradient-to-t from-black/30 to-transparent"></div>
     </section>
   );
 }
