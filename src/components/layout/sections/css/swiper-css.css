@@ -1,0 +1,26 @@
+.custom-swiper .swiper-button-prev,
+.custom-swiper .swiper-button-next {
+    color: #236742;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-weight: 900;
+    font-size: 16px;
+}
+
+.custom-swiper .swiper-button-prev {
+    left: 20px;
+}
+
+.custom-swiper .swiper-button-next {
+    right: 20px;
+}
+
+@media (max-width: 640px) {
+
+    .custom-swiper .swiper-button-prev,
+    .custom-swiper .swiper-button-next {
+        display: none;
+    }
+}
