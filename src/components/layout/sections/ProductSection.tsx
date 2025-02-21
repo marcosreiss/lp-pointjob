@@ -28,7 +28,7 @@ const features = [
 
 const ProductSection = () => {
     return (
-        <section className="w-full flex flex-col items-center px-6 py-10">
+        <section className="w-full md:w-[90%] md:mx-auto lg:w-full  flex flex-col items-center px-6 py-10">
             {/* Título */}
             <div className="relative flex items-center w-full  mb-8">
                 <div className=" w-20 lg:w-36 h-1 lg:h-2 bg-[#4C8365] rounded"></div>
@@ -39,7 +39,7 @@ const ProductSection = () => {
             </div>
 
             {/* Grid Responsivo */}
-            <div className="flex flex-col gap-6 lg:grid lg:grid-cols-2 lg:gap-8">
+            <div className="flex flex-col gap-6 md:w-[80%] lg:grid lg:grid-cols-2 lg:gap-8">
                 {features.map((feature, index) => (
                     <Card key={index} className="bg-white shadow-[6px_6px_30px_#4C8365] rounded-3xl p-6">
                         <CardContent className="p-0 ">
