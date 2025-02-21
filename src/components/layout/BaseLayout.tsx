@@ -6,7 +6,7 @@ interface BaseLayoutProps {
   minHeight?: string;
 }
 
-const BaseLayout: React.FC<BaseLayoutProps> = ({ children, bgColor = "white", minHeight = "100vh" }) => {
+const BaseLayout: React.FC<BaseLayoutProps> = ({ children, bgColor = "white", minHeight = "0" }) => {
   return (
     <div
       className={`w-full min-h-screen`}

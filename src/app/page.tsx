@@ -1,5 +1,6 @@
 import BaseLayout from "src/components/layout/BaseLayout";
 import Navbar from "src/components/layout/NavBar";
+import FormSectio from "src/components/layout/sections/FormSection";
 import HeroSection from "src/components/layout/sections/HeroSection";
 import ProductSection from "src/components/layout/sections/ProductSection";
 import TestimonialsCarousel from "src/components/layout/sections/TestimonialsCarousel";
@@ -13,7 +14,12 @@ export default function Home() {
         <HeroSection />
         <ProductSection />
       </BaseLayout>
+
       <TestimonialsCarousel />
+
+      <BaseLayout>
+        <FormSectio />
+      </BaseLayout>
     </>
   );
 }

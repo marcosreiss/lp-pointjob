@@ -1,0 +1,18 @@
+.custom-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    font-size: 1.125rem; /* lg */
+    color: white;
+    border-radius: 12px;
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(130deg, #236742, #46CD84);
+    transition: all 600ms ease-in-out;
+    margin-top: 20px;
+  }
+  
+  .custom-button:hover {
+    transform: scale(1.05);
+  }
+  
