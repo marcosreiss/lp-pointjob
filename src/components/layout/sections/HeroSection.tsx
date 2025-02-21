@@ -4,10 +4,10 @@ import { Button } from "src/components/ui/button";
 
 const HeroSection = () => {
     return (
-        <section className="w-full flex flex-col-reverse lg:flex-row items-center justify-between px-6 py-10 bg-transparent lg:relative lg:mt-12">
+        <section className="w-full flex flex-col-reverse md:flex-row items-center justify-between px-6 py-10 md:px-12 bg-transparent relative lg:mt-12">
             {/* Texto à esquerda */}
-            <div className="max-w-[570px] text-left  lg:mt-5 lg:mb-52 ">
-                <h1 className="w-[90%] lg:w-full text-white text-[24px] lg:text-4xl font-bold leading-tight lg:leading-normal">
+            <div className="md:max-w-[380px] lg:max-w-[570px] text-left  lg:mt-5 lg:mb-52 ">
+                <h1 className="w-[90%] lg:w-full text-white text-[24px] md:text-2xl lg:text-4xl font-bold leading-tight lg:leading-normal">
                     Obtenha mais
                     <span className="bg-[linear-gradient(130deg,#ffffff_1%,#e0e0e0)] text-green-800 text-[36px] px-3 py-1 inline-block lg:inline lg:mx-2 w-9/10 lg:w-90 mx-auto m-2 rounded">
                         produtividade
@@ -33,7 +33,7 @@ const HeroSection = () => {
                     alt="Ilustração Relógio"
                     width={200}
                     height={200}
-                    className="lg:absolute top-0 right-0 lg:w-[580px] lg:h-auto"
+                    className="md:absolute md:top-3 md:right-5 lg:top-0 lg:right-0 lg:w-[580px] md:w-[380px] md:h-auto"
                 />
             </div>
         </section>
