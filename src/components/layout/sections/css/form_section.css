@@ -3,16 +3,28 @@
     align-items: center;
     gap: 8px;
     padding: 10px 20px;
-    font-size: 1.125rem; /* lg */
+    font-size: 1.125rem;
+    /* lg */
     color: white;
     border-radius: 12px;
     box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.5);
     background: linear-gradient(130deg, #236742, #46CD84);
     transition: all 600ms ease-in-out;
     margin-top: 20px;
-  }
-  
-  .custom-button:hover {
+}
+
+.custom-button:hover {
     transform: scale(1.05);
-  }
-  
+}
+
+/* Tablet (mínimo de 768px e máximo de 1023px) */
+@media (max-width: 1023px) {
+    .custom-button {
+        padding: 7px 15px;
+    }
+}
+
+/* Mobile (máximo de 767px) */
+@media (max-width: 767px) {
+    .custom-button {}
+}

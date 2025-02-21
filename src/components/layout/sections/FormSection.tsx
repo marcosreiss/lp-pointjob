@@ -3,16 +3,16 @@ import './css/form_section.css'
 
 export default function ContactSection() {
     return (
-        <section className="w-full flex flex-col lg:flex-row items-center justify-between px-6 py-10 lg:py-28 bg-white  max-w-[1140px] mx-auto">
+        <section className="w-full flex flex-col md:flex-row items-center justify-between px-10 py-10 lg:py-28 bg-white  max-w-[1140px] mx-auto">
             {/* Texto */}
-            <div className="lg:w-2/3 text-left ">
-                <h2 className="text-2xl md:text-3xl lg:text-[44px] font-bold text-primary lg:leading-relaxed ">
-                    <span className="bg-[linear-gradient(130deg,#236742,#46CD84)] text-white px-2 py-1 rounded-md">
+            <div className="md:w-2/3 text-left ">
+                <h2 className="text-2xl md:text-4xl lg:text-[44px] font-bold text-primary md:leading-normal lg:leading-relaxed ">
+                    <span className="bg-[linear-gradient(130deg,#236742,#46CD84)] text-white px-1 lg:px-2 lg:py-1 rounded-md">
                         Transforme
                     </span>{" "}
                     seu negócio hoje mesmo!
                 </h2>
-                <p className="text-gray-600 mt-4 lg:text-xl">
+                <p className="text-gray-600 lg:mt-4 text-lg lg:text-xl">
                     Aprimore o controle de ponto com mais segurança e eficiência. Fale com um especialista agora!
                 </p>
                 <button className="custom-button">
@@ -29,7 +29,7 @@ export default function ContactSection() {
             </div>
 
             {/* Formulário */}
-            <div className="flex flex-col justify-center lg:w-1/2 bg-[linear-gradient(138deg,#46CD84_1%,#236742_99%)] lg:px-10 lg:h-[450px] rounded-2xl shadow-[11px_11px_15px_rgba(0,0,0,0.5)] text-white mt-6 lg:mt-0">
+            <div className="flex flex-col justify-center md:w-1/2 bg-[linear-gradient(138deg,#46CD84_1%,#236742_99%)] px-7 h-[350px] lg:px-10 lg:h-[450px] rounded-2xl shadow-[11px_11px_15px_rgba(0,0,0,0.5)] text-white mt-6 lg:mt-0">
                 <h3 className="text-lg lg:text-3xl font-bold text-center mb-4">Fale Conosco</h3>
                 <form className="flex flex-col gap-4">
                     <label className="text-sm font-semibold">
