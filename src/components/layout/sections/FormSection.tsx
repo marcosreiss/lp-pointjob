@@ -5,7 +5,7 @@ export default function ContactSection() {
     return (
         <section className="w-full flex flex-col md:flex-row items-center justify-between px-10 py-10 lg:py-28 bg-white  max-w-[1140px] mx-auto">
             {/* Texto */}
-            <div className="md:w-2/3 text-left ">
+            <div className="md:w-2/3 text-left px-3">
                 <h2 className="text-2xl md:text-4xl lg:text-[44px] font-bold text-primary md:leading-normal lg:leading-relaxed ">
                     <span className="bg-[linear-gradient(130deg,#236742,#46CD84)] text-white px-1 lg:px-2 lg:py-1 rounded-md">
                         Transforme

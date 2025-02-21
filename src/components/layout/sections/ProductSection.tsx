@@ -58,7 +58,7 @@ const ProductSection = () => {
             </div>
 
             {/* Botão abaixo dos cards */}
-            <Button className="mt-10 bg-green-800 text-white text-[20px] lg:text-[28px] font-semibold px-8 py-6 rounded-lg hover:bg-green-900 transition shadow-[6px_6px_30px_#4C8365]">
+            <Button className="mt-10 bg-green-800 text-white text-[20px] lg:text-[28px] font-semibold px-8 py-6 rounded-lg transition shadow-[11px_11px_15px_#4C8365] border-none">
                 Faça seu orçamento
             </Button>
         </section>

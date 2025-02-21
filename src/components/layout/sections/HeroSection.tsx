@@ -9,7 +9,7 @@ const HeroSection = () => {
             <div className="max-w-[570px] text-left  lg:mt-5 lg:mb-52 ">
                 <h1 className="w-[90%] lg:w-full text-white text-[24px] lg:text-4xl font-bold leading-tight lg:leading-normal">
                     Obtenha mais
-                    <span className="bg-white text-green-800 text-[36px] px-3 py-1 inline-block lg:inline lg:mx-2 w-9/10 lg:w-90 mx-auto m-2 rounded">
+                    <span className="bg-[linear-gradient(130deg,#ffffff_1%,#e0e0e0)] text-green-800 text-[36px] px-3 py-1 inline-block lg:inline lg:mx-2 w-9/10 lg:w-90 mx-auto m-2 rounded">
                         produtividade
                     </span>
                     <br /> no registro de ponto da sua empresa.
@@ -19,10 +19,11 @@ const HeroSection = () => {
                 </p>
                 <Button
                     variant="outline"
-                    className="mt-4 bg-white text-green-800 text-xl lg:text-2xl font-semibold px-6 py-6 rounded-lg hover:bg-gray-200 transition"
+                    className="mt-4 bg-white text-green-800 text-xl lg:text-2xl font-semibold px-6 py-6 rounded-lg border-none transition duration-1000 ease-in-out shadow-[11px_11px_15px_rgba(0,0,0,0.5)] hover:scale-105 hover:bg-white hover:text-green-800"
                 >
                     Entre em contato
                 </Button>
+
             </div>
 
             {/* Imagem à direita */}
